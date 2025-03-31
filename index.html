@@ -3,7 +3,6 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
   <title>Storm Warning</title>
 
   <!--[if IE]>
@@ -31,7 +30,7 @@
       100% { background-position: 0% 50%; }
     }
 
-    /* Banner as background */
+    /* Banner with background image */
     #banner {
       background-image: url('sw_new5.png');
       background-size: cover;
@@ -41,7 +40,7 @@
       height: 250px;
     }
 
-    /* Logo at bottom center */
+    /* Logo */
     #logo {
       position: absolute;
       bottom: 10px;
@@ -153,7 +152,7 @@
       margin-top: -9px;
     }
 
-    /* Social media icons */
+    /* Social links */
     #social {
       text-align: right;
       margin-right: 50px;
@@ -172,7 +171,7 @@
       color: black;
     }
 
-    /* Responsive styles */
+    /* Responsive adjustments */
     @media screen and (max-width: 768px) {
       h1 {
         font-size: 2em;
@@ -202,7 +201,11 @@
       }
 
       #banner {
-        height: 200px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top center;
+        height: auto;
+        aspect-ratio: 1920 / 250;
       }
 
       #sidebarMenu {
@@ -221,7 +224,7 @@
   <!-- Banner -->
   <div id="banner"></div>
 
-  <!-- Band Title and Genres -->
+  <!-- Main Content -->
   <div class="container">
     <h1>Storm Warning</h1>
     <h3>
@@ -232,7 +235,7 @@
     </h3>
   </div>
 
-  <!-- Sidebar Menu Toggle -->
+  <!-- Sidebar Toggle -->
   <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
   <label for="openSidebarMenu" class="sidebarIconToggle">
     <div class="spinner diagonal part-1"></div>
