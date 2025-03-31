@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+    <meta name="dcterms.created" content="Sat, 26 Oct 2019 11:02:09 GMT">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title></title>
+    
+    <!--[if IE]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  
+  
+  <body>
+  
+ <style>
+
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+html, body {
+    overflow-x: hidden;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: "Varela Round", sans-serif;
+    color: #fff;
+    background: linear-gradient(-45deg, #ffb700, #007847, #000000, #007847);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    width: 100%;
+    position: absolute;
+    top: 35%;
+    text-align: center;
+}
+
+.mystyles{
+    margin:100px;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+h3 {
+    color: #f0f0f0;
+    font-weight: 100;
+}
+
+h5 {
+    color: #f0f0f0;
+    font-weight: 300;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: #ffef8b; /* soft gold for links */
+}
+
+.sidenav {
+    margin-top: 360px;
+    margin-left: 10px;
+    font-size: 125%;
+}
+
+#sidebarMenu {
+    height: 100%;
+    position: fixed;
+    left: 0;
+    width: 250px;
+    margin-top: 160px;
+    transform: translateX(-250px);
+    transition: transform 250ms ease-in-out;
+}
+
+.sidebarMenuInner {
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+.sidebarMenuInner li {
+    list-style: none;
+    color: #ffef8b; /* gold text */
+    font-weight: bold;
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+.sidebarMenuInner li span {
+    display: block;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.50);
+}
+.sidebarMenuInner li a {
+    color: #ffef8b;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+input[type="checkbox"]:checked ~ #sidebarMenu {
+    transform: translateX(0);
+}
+
+input[type=checkbox] {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
+}
+.sidebarIconToggle {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    height: 22px;
+    width: 22px;
+    top: 22px;
+    left: 15px;
+}
+.spinner {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: #ffb700;
+}
+.horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+.diagonal.part-1 {
+    position: relative;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    float: left;
+}
+.diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+    opacity: 0;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+    transform: rotate(135deg);
+    margin-top: 8px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+    transform: rotate(-135deg);
+    margin-top: -9px;
+}
+
+.fa {
+    padding: 10px;
+    width: 15px;
+    height: 13px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0px 10px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-twitter {
+    background: #ffb700; /* Jamaican gold */
+    color: black;
+}
+
+iframe:hover {
+    opacity: 0.5;
+}
+
+</style>
+
+<img src="sw1-sm-removebg.png" alt="Logo" style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); width: 250px;">
+
+
+ <div id="banner" style="display: flex; justify-content: center;">
+  <picture>
+    <img src="sw_new5.png" width="1920px" height="250px" alt="" border="0">
+  </picture>
+</div>
+
+ 
+<div class = "container" ><h1 style = "font-size:300%">Storm Warning</h1>
+ 
+<h3 style = "font-size:200%; margin-top:2cm">
+	<span class="mystyles">Ska</span>
+	<span class="mystyles">Reggae</span>
+	<span class="mystyles">Rock</span>
+	<span class="mystyles">Steady</span>
+	</h3>
+
+ </div>
+ 
+<div class="header"></div>
+  <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+  <label for="openSidebarMenu" class="sidebarIconToggle">
+    <div class="spinner diagonal part-1"></div>
+    <div class="spinner horizontal"></div>
+    <div class="spinner diagonal part-2"></div>
+  </label>
+  
+  <div id="sidebarMenu">
+    <ul class="sidebarMenuInner">
+      <!--  <li>Jelena Jovanovic <span>Web Developer</span></li> -->
+      <li><a href="sw_contacts.html" >Contact</a></li>
+      <li><a href="sw_gigs.html" >Gigs</a></li>
+      <li><a href="sw_look.html" >Look</a></li>
+      <li><a href="sw_listen.html" >Listen</a></li>
+     
+    </ul>
+  </div>
+ 
+<div id="social" style="text-align:right; margin-right:50px; margin-top:450px;">
+		
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<a href="https://www.facebook.com/profile.php?id=61574171218142#" class="fa fa-facebook" target="_blank" aria-label="Facebook Page"></a>
+<a href="https://www.instagram.com/stormwarningska/" class="fa fa-instagram" target="_blank" aria-label="Instagram Profile"></a>
+<a href="https://soundcloud.com/yourusername" class="fa fa-soundcloud" target="_blank" aria-label="SoundCloud Profile"></a>
+
+
+<div style="float:right; margin-right:10px">
+
+
+ 
+
+</div>
+ 
+ </div>
+ 
+  </body>
+</html>
