@@ -2,11 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Responsive meta tag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
-  <meta name="dcterms.created" content="Sat, 26 Oct 2019 11:02:09 GMT">
-  <meta name="description" content="">
-  <meta name="keywords" content="">
   <title>Storm Warning</title>
 
   <!--[if IE]>
@@ -34,21 +31,17 @@
       100% { background-position: 0% 50%; }
     }
 
-    /* Banner */
+    /* Banner as background */
     #banner {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 20px;
-    }
-
-    #banner img {
+      background-image: url('sw_new5.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
       width: 100%;
-      max-width: 1920px;
-      height: auto;
+      height: 250px;
     }
 
-    /* Logo */
+    /* Logo at bottom center */
     #logo {
       position: absolute;
       bottom: 10px;
@@ -77,11 +70,6 @@
       margin-top: 2em;
     }
 
-    h5 {
-      color: #f0f0f0;
-      font-weight: 300;
-    }
-
     .mystyles {
       margin: 20px;
       display: inline-block;
@@ -92,7 +80,7 @@
       color: #ffef8b;
     }
 
-    /* Sidebar nav */
+    /* Sidebar menu */
     #sidebarMenu {
       height: 100%;
       position: fixed;
@@ -117,13 +105,7 @@
       color: #ffef8b;
       font-weight: bold;
       padding: 20px;
-      cursor: pointer;
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    }
-
-    .sidebarMenuInner li span {
-      font-size: 14px;
-      color: rgba(255, 255, 255, 0.5);
     }
 
     .sidebarMenuInner li a {
@@ -171,7 +153,7 @@
       margin-top: -9px;
     }
 
-    /* Socials */
+    /* Social media icons */
     #social {
       text-align: right;
       margin-right: 50px;
@@ -190,11 +172,7 @@
       color: black;
     }
 
-    iframe:hover {
-      opacity: 0.5;
-    }
-
-    /* Responsive rules */
+    /* Responsive styles */
     @media screen and (max-width: 768px) {
       h1 {
         font-size: 2em;
@@ -223,6 +201,10 @@
         margin-top: 15vh;
       }
 
+      #banner {
+        height: 200px;
+      }
+
       #sidebarMenu {
         width: 200px;
         padding-top: 100px;
@@ -237,13 +219,9 @@
   <img id="logo" src="sw1-sm-removebg.png" alt="Logo">
 
   <!-- Banner -->
-  <div id="banner">
-    <picture>
-      <img src="sw_new5.png" alt="Storm Warning Banner">
-    </picture>
-  </div>
+  <div id="banner"></div>
 
-  <!-- Title + Styles -->
+  <!-- Band Title and Genres -->
   <div class="container">
     <h1>Storm Warning</h1>
     <h3>
@@ -254,7 +232,7 @@
     </h3>
   </div>
 
-  <!-- Sidebar -->
+  <!-- Sidebar Menu Toggle -->
   <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
   <label for="openSidebarMenu" class="sidebarIconToggle">
     <div class="spinner diagonal part-1"></div>
@@ -262,6 +240,7 @@
     <div class="spinner diagonal part-2"></div>
   </label>
 
+  <!-- Sidebar Menu -->
   <div id="sidebarMenu">
     <ul class="sidebarMenuInner">
       <li><a href="sw_contacts.html">Contact</a></li>
@@ -271,7 +250,7 @@
     </ul>
   </div>
 
-  <!-- Social icons -->
+  <!-- Social Icons -->
   <div id="social">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <a href="https://www.facebook.com/profile.php?id=61574171218142#" class="fa fa-facebook" target="_blank"></a>
