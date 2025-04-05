@@ -18,6 +18,22 @@
       50% { background-position: 100% 50%; }
       100% { background-position: 0% 50%; }
     }
+    @media (max-width: 768px) {
+      .banner-desktop {
+        display: none;
+      }
+      .banner-mobile {
+        display: block;
+      }
+    }
+    @media (min-width: 769px) {
+      .banner-desktop {
+        display: block;
+      }
+      .banner-mobile {
+        display: none;
+      }
+    }
   </style>
 </head>
 <body class="text-white overflow-x-hidden min-h-screen relative pb-32">
@@ -39,8 +55,13 @@
     </ul>
   </div>
 
-  <!-- Banner -->
-  <div class="w-full h-[250px] bg-cover bg-center bg-no-repeat" style="background-image: url('sw_new5.png');"></div>
+  <!-- Banner for desktop -->
+  <div class="banner-desktop w-full h-[250px] bg-cover bg-center bg-no-repeat" style="background-image: url('sw_new5.png');"></div>
+
+  <!-- Banner for mobile with full image shown -->
+  <div class="banner-mobile w-full" style="background-color: black;">
+    <img src="sw_mobile.png" alt="Mobile Banner" class="w-full h-auto">
+  </div>
 
   <!-- Main Content -->
   <div class="text-center mt-[10vh] px-4">
