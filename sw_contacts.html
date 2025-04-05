@@ -23,22 +23,22 @@
   </head>
   <body class="text-white min-h-screen overflow-x-hidden relative">
     <!-- Home Button -->
-    <button class="bg-green-800 hover:bg-yellow-400 text-white font-bold py-2 px-4 rounded mt-6 ml-6 fixed top-0 left-0 z-50" onclick="window.location.href='index.html';">
+    <button class="bg-green-800 hover:bg-yellow-400 text-white font-bold py-2 px-4 rounded mt-6 ml-6 fixed top-0 left-0 z-50" onclick="window.location.href='sw_title1.html';">
       <i class="fa fa-home"></i>
     </button>
 
     <!-- Logo -->
-    <img src="sw1-sm-removebg.png" alt="Logo" class="absolute top-4 right-4 w-40">
+    <img src="sw1-sm-removebg.png" alt="Logo" class="absolute top-4 right-4 w-24 md:w-40">
 
     <!-- Title -->
-    <div class="pt-24 text-center">
-      <h1 class="text-5xl font-bold">Contacts</h1>
+    <div class="pt-32 text-center px-4">
+      <h1 class="text-4xl md:text-5xl font-bold">Contacts</h1>
     </div>
 
     <!-- Contact Info and Socials Container -->
     <div class="flex flex-col md:flex-row justify-center items-start gap-10 px-6 mt-16">
       <!-- Contact Info -->
-      <div class="md:w-1/2">
+      <div class="w-full md:w-1/2 md:pl-24">
         <p class="mb-4 text-xl">You can find us at:</p>
         <p class="mb-4">
           <strong>Phone:</strong><br>
@@ -52,21 +52,10 @@
       </div>
 
       <!-- Facebook + Instagram -->
-      <div class="md:w-1/2 flex flex-col items-center">
-        <!-- Facebook Embed -->
-        <div class="fb-page" 
-             data-href="https://www.facebook.com/profile.php?id=61574171218142" 
-             data-tabs="timeline" 
-             data-width="340" 
-             data-height="500" 
-             data-small-header="false" 
-             data-adapt-container-width="true" 
-             data-hide-cover="false" 
-             data-show-facepile="true">
-          <blockquote cite="https://www.facebook.com/profile.php?id=61574171218142" class="fb-xfbml-parse-ignore">
-            <a href="https://www.facebook.com/profile.php?id=61574171218142">Facebook Page</a>
-          </blockquote>
-        </div>
+      <div class="w-full md:w-1/2 flex flex-col items-center">
+        <!-- Facebook Embed Placeholder -->
+        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D61574171218142&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true" 
+          width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
 
         <!-- Instagram Link -->
         <div class="mt-6 w-[340px] h-[100px] border border-gray-300 rounded-lg flex items-center justify-center bg-black/40">
@@ -80,9 +69,5 @@
         </div>
       </div>
     </div>
-
-    <!-- Facebook SDK -->
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0"></script>
   </body>
 </html>
