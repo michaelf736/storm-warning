@@ -20,7 +20,7 @@
     }
   </style>
 </head>
-<body class="text-white overflow-x-hidden min-h-screen">
+<body class="text-white overflow-x-hidden min-h-screen relative">
   <!-- Sidebar Toggle -->
   <input type="checkbox" id="openSidebarMenu" class="hidden">
   <label for="openSidebarMenu" class="fixed top-5 left-4 z-50 cursor-pointer">
@@ -40,7 +40,9 @@
   </div>
 
   <!-- Logo -->
-  <img src="sw1-sm-removebg.png" alt="Logo" class="absolute bottom-2 left-1/2 transform -translate-x-1/2 w-[40vw] max-w-[200px] z-10">
+  <div class="absolute bottom-2 left-1/2 transform -translate-x-1/2 w-full flex justify-center z-10">
+    <img src="sw1-sm-removebg.png" alt="Logo" class="w-32 md:w-[40vw] max-w-[200px]">
+  </div>
 
   <!-- Banner -->
   <div class="w-full h-[250px] bg-cover bg-center bg-no-repeat" style="background-image: url('sw_new5.png');"></div>
