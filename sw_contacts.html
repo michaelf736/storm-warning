@@ -2,208 +2,87 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
-    <meta name="dcterms.created" content="Mon, 04 Nov 2019 18:18:45 GMT">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <title></title>
-    
-    <!--[if IE]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-	
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Add icon library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-.btn {
-  background-color: #007847;
-  border: none;
-  color: white;
-  padding: 12px 16px;
-  font-size: 16px;
-  cursor: pointer;
-  margin-left: 50px;
-  margin-top: 50px;
-  border-radius: 10px;
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Storm Warning - Contact</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Exo&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Exo', sans-serif;
+        background: linear-gradient(-45deg, #ffb700, #007847, #000000, #007847);
+        background-size: 400% 400%;
+        animation: gradientBG 15s ease infinite;
+      }
+      @keyframes gradientBG {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
+    </style>
+  </head>
+  <body class="text-white min-h-screen overflow-x-hidden relative">
+    <!-- Home Button -->
+    <button class="bg-green-800 hover:bg-yellow-400 text-white font-bold py-2 px-4 rounded mt-6 ml-6 fixed top-0 left-0 z-50" onclick="window.location.href='index.html';">
+      <i class="fa fa-home"></i>
+    </button>
 
-}
+    <!-- Logo -->
+    <img src="sw1-sm-removebg.png" alt="Logo" class="absolute top-4 right-4 w-40">
 
-/* Darker background on mouse-over */
-.btn:hover {
-  background-color:#ffb700;
-}
-</style>
+    <!-- Title -->
+    <div class="pt-24 text-center">
+      <h1 class="text-5xl font-bold">Contacts</h1>
+    </div>
 
-</head>
-  
-<body>
+    <!-- Contact Info and Socials Container -->
+    <div class="flex flex-col md:flex-row justify-center items-start gap-10 px-6 mt-16">
+      <!-- Contact Info -->
+      <div class="md:w-1/2">
+        <p class="mb-4 text-xl">You can find us at:</p>
+        <p class="mb-4">
+          <strong>Phone:</strong><br>
+          Michael: 07951 412461<br>
+          John: 07940 701168
+        </p>
+        <p class="mb-4">
+          <strong>Email:</strong><br>
+          <a href="mailto:stormwarningska@gmail.com" class="underline text-white">stormwarningska@gmail.com</a>
+        </p>
+      </div>
 
-<button class="btn" onclick = "window.location.href = 'sw_title1.html';"><i class="fa fa-home"></i></button>
+      <!-- Facebook + Instagram -->
+      <div class="md:w-1/2 flex flex-col items-center">
+        <!-- Facebook Embed -->
+        <div class="fb-page" 
+             data-href="https://www.facebook.com/profile.php?id=61574171218142" 
+             data-tabs="timeline" 
+             data-width="340" 
+             data-height="500" 
+             data-small-header="false" 
+             data-adapt-container-width="true" 
+             data-hide-cover="false" 
+             data-show-facepile="true">
+          <blockquote cite="https://www.facebook.com/profile.php?id=61574171218142" class="fb-xfbml-parse-ignore">
+            <a href="https://www.facebook.com/profile.php?id=61574171218142">Facebook Page</a>
+          </blockquote>
+        </div>
 
- <style>
-  body {
-    margin: 0;
-    width: 100%;
-    height: 100vh;
-    font-family: "Exo", sans-serif;
-    color: #fff;
-    background: linear-gradient(-45deg, #ffb700, #007847, #000000, #007847);
-    background-size: 400% 400%;
-    animation: gradientBG 15s ease infinite;
-}
+        <!-- Instagram Link -->
+        <div class="mt-6 w-[340px] h-[100px] border border-gray-300 rounded-lg flex items-center justify-center bg-black/40">
+          <a href="https://www.instagram.com/stormwarningska?igsh=bzFraGtnOXNta291" 
+             target="_blank" 
+             class="flex items-center gap-4 text-white text-lg">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" 
+                 alt="Instagram" width="30" height="30" class="rounded">
+            @stormwarningska
+          </a>
+        </div>
+      </div>
+    </div>
 
-@keyframes gradientBG {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-.container {
-    width: 100%;
-    position: absolute;
-    top: 10%;
-    text-align: center;
-}
-
-.mystyles{
- margin:100px;
-}
-
-h1 {
-    font-weight: 600;
-}
-
-h3 {
-    color: #eee;
-    font-weight: 100;
-}
-
-h5 {
-    color:#eee;
-    font-weight:300;
-}
-
-a,
-a:hover {
-    text-decoration: none;
-    color: #ddd;
-}
-
-.custom-counter {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.custom-counter li {
-  counter-increment: step-counter;
-  margin-bottom: 10px;
-}
-
-.custom-counter li::before {
-  content: counter(step-counter);
-  margin-right: 5px;
-  font-size: 80%;
-  background-color: rgb(0,200,200);
-  color: white;
-  font-weight: bold;
-  padding: 3px 8px;
-  border-radius: 3px;
-}
-
-.title {
-margin-left: 30px;
-font-size: 90%;
-
-
- }
-
-
-}
-
-Resources
-  
-</style>
-
-<img src="sw1-sm-removebg.png" alt="Logo" style="position: absolute; top: 10px; right: 10px; width: 250px;">
-
-<div class = "container" ><h1 style = "font-size:300%">Contacts</h1>
-
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" 
-  src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0" nonce="ABC123">
-</script>
-
-<div style="position: absolute; top: 200%; left: 66%; transform: translateX(-33%); text-align: center;">
-  <!-- Facebook Page Embed -->
-  <div class="fb-page" 
-    data-href="https://www.facebook.com/profile.php?id=61574171218142" 
-    data-tabs="timeline" 
-    data-width="340" 
-    data-height="500" 
-    data-small-header="false" 
-    data-adapt-container-width="true" 
-    data-hide-cover="false" 
-    data-show-facepile="true">
-    <blockquote cite="https://www.facebook.com/profile.php?id=61574171218142" class="fb-xfbml-parse-ignore">
-      <a href="https://www.facebook.com/profile.php?id=61574171218142">Facebook Page</a>
-    </blockquote>
-  </div>
-
-  <!-- Instagram Link Box with Transparent Background & White Text -->
-  <div style="margin-top: 20px; width: 340px; height: 100px; border: 1px solid #ddd; border-radius: 10px; display: flex; align-items: center; justify-content: center; background-color: transparent;">
-    <a href="https://www.instagram.com/stormwarningska?igsh=bzFraGtnOXNta291" 
-       target="_blank" 
-       style="text-decoration: none; color: white; font-family: Arial, sans-serif; font-size: 18px; display: flex; align-items: center; gap: 10px;">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" 
-           alt="Instagram" width="30" height="30" style="border-radius: 5px;">
-      @stormwarningska
-    </a>
-  </div>
-</div>
-
-
-
-
-
-
-
-<div style="position: absolute; top: 200%; left: 30%; transform: translateX(-50%); text-align: left;">
-  <p>You can find us at:</p>
-  
-
-
-  
-  
-  <p>
-    <strong>Phone:</strong><br>
-    Michael: 07951 412461<br>
-    John: 07940 701168
-  </p>
-   <p>
-    <strong>Email:</strong><br>
-    stormwarningska@gmail.com<br>
-  </p>
-  
-
-</div>
-
-
-<script async defer crossorigin="anonymous" 
-  src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0" nonce="ABC123">
-</script>
-
-
-
-</body>
-</html>
-
+    <!-- Facebook SDK -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0"></script>
   </body>
 </html>
