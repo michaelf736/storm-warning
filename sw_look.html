@@ -23,7 +23,7 @@
   </head>
   <body class="text-white min-h-screen overflow-x-hidden relative">
     <!-- Home Button -->
-    <button class="bg-green-800 hover:bg-yellow-400 text-white font-bold py-2 px-4 rounded mt-6 ml-6 fixed top-0 left-0 z-50" onclick="window.location.href='index.html';">
+    <button class="bg-green-800 hover:bg-yellow-400 text-white font-bold py-2 px-4 rounded mt-6 ml-6 fixed top-0 left-0 z-50" onclick="window.location.href='sw_title1.html';">
       <i class="fa fa-home"></i>
     </button>
 
@@ -35,14 +35,17 @@
       <h1 class="text-4xl md:text-5xl font-bold">Pics & Vids</h1>
     </div>
 
-    <!-- Video Thumbnail and Player -->
-    <div class="flex flex-col items-center mt-12 px-4">
-      <img src="sw_rudy_thumb.jpg" alt="Video thumbnail" class="cursor-pointer rounded-lg shadow-lg w-40 hover:scale-105 transition-transform duration-300" onclick="document.getElementById('videoPlayer').classList.remove('hidden')">
+    <!-- Video Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-6 mt-12">
+      <!-- Video Item -->
+      <div class="flex flex-col items-center">
+        <img src="sw_rudy_thumb.jpg" alt="Video thumbnail" class="cursor-pointer rounded-md shadow-lg w-32 hover:scale-105 transition-transform duration-300" onclick="document.getElementById('videoPlayer').classList.remove('hidden')">
 
-      <video id="videoPlayer" class="hidden mt-6 w-[280px] rounded-lg shadow-lg" controls>
-        <source src="sw_rudy_vid.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+        <video id="videoPlayer" class="hidden mt-4 w-40 rounded-md shadow-lg" controls>
+          <source src="sw_rudy_vid.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
     </div>
 
     <!-- More to Follow Text -->
