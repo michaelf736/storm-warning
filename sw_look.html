@@ -35,11 +35,14 @@
       <h1 class="text-4xl md:text-5xl font-bold">Pics & Vids</h1>
     </div>
 
-    <!-- Thumbnail Preview Video Section -->
-    <div class="flex justify-center mt-12 px-4">
-      <a href="sw_rudy_vid.mp4" target="_blank">
-        <img src="sw_rudy_thumb.jpg" alt="Video thumbnail" class="rounded-lg shadow-lg w-64 hover:scale-105 transition-transform duration-300">
-      </a>
+    <!-- Video Thumbnail and Player -->
+    <div class="flex flex-col items-center mt-12 px-4">
+      <img src="sw_rudy_thumb.jpg" alt="Video thumbnail" class="cursor-pointer rounded-lg shadow-lg w-40 hover:scale-105 transition-transform duration-300" onclick="document.getElementById('videoPlayer').classList.remove('hidden')">
+
+      <video id="videoPlayer" class="hidden mt-6 w-[280px] rounded-lg shadow-lg" controls>
+        <source src="sw_rudy_vid.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
     </div>
 
     <!-- More to Follow Text -->
