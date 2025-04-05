@@ -35,17 +35,12 @@
       <h1 class="text-4xl md:text-5xl font-bold">Pics & Vids</h1>
     </div>
 
-    <!-- Video Grid -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-6 mt-12">
-      <!-- Video Item -->
-      <div class="flex flex-col items-center">
-        <img src="sw_rudy_thumb.jpg" alt="Video thumbnail" class="cursor-pointer rounded-md shadow-lg w-32 hover:scale-105 transition-transform duration-300" onclick="this.nextElementSibling.classList.remove('hidden')">
-
-        <video class="hidden mt-4 w-40 rounded-md shadow-lg" controls>
-          <source src="sw_rudy_vid.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
+    <!-- Video Section -->
+    <div class="flex justify-center mt-12 px-4">
+      <video class="w-full max-w-2xl rounded-lg shadow-lg" controls>
+        <source src="sw_rudy_vid.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
     </div>
 
     <!-- More to Follow Text -->
