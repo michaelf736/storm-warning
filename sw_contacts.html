@@ -53,24 +53,15 @@
 
       <!-- Facebook + Instagram -->
       <div class="w-full md:w-1/2 flex flex-col items-center">
-        <!-- Facebook SDK Root -->
-        <div id="fb-root"></div>
-
-        <!-- Facebook Page Plugin -->
-        <div class="w-[340px]">
-          <div class="fb-page"
-               data-href="https://www.facebook.com/profile.php?id=61574171218142"
-               data-tabs="timeline"
-               data-width="340"
-               data-height="500"
-               data-small-header="false"
-               data-adapt-container-width="true"
-               data-hide-cover="false"
-               data-show-facepile="true">
-            <blockquote cite="https://www.facebook.com/profile.php?id=61574171218142" class="fb-xfbml-parse-ignore">
-              <a href="https://www.facebook.com/profile.php?id=61574171218142">Facebook</a>
-            </blockquote>
-          </div>
+        <!-- Facebook Link Box -->
+        <div class="w-[340px] h-[100px] border border-gray-300 rounded-lg flex items-center justify-center bg-black/40">
+          <a href="https://www.facebook.com/profile.php?id=61574171218142" 
+             target="_blank" 
+             class="flex items-center gap-4 text-white text-lg">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" 
+                 alt="Facebook" width="30" height="30" class="rounded">
+            /stormwarningska
+          </a>
         </div>
 
         <!-- Instagram Link -->
@@ -85,8 +76,5 @@
         </div>
       </div>
     </div>
-
-    <!-- Load Facebook SDK -->
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0"></script>
   </body>
 </html>
