@@ -25,6 +25,9 @@
       .banner-mobile {
         display: block;
       }
+      .mobile-menu-offset {
+        top: 105px !important;
+      }
     }
     @media (min-width: 769px) {
       .banner-desktop {
@@ -39,7 +42,7 @@
 <body class="text-white overflow-x-hidden min-h-screen relative pb-32">
   <!-- Sidebar Toggle -->
   <input type="checkbox" id="openSidebarMenu" class="hidden">
-  <label for="openSidebarMenu" class="fixed top-5 left-4 z-50 cursor-pointer">
+  <label for="openSidebarMenu" class="fixed top-5 left-4 z-50 cursor-pointer mobile-menu-offset">
     <div class="w-6 h-1 bg-yellow-400 mb-1 transform transition-transform duration-300 origin-left" id="bar1"></div>
     <div class="w-6 h-1 bg-yellow-400 mb-1" id="bar2"></div>
     <div class="w-6 h-1 bg-yellow-400 transform transition-transform duration-300 origin-left" id="bar3"></div>
