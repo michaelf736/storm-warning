@@ -21,16 +21,14 @@
       }
     </style>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-KS6Z1NLJTR"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-KS6Z1NLJTR');
-</script>
-    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KS6Z1NLJTR"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-KS6Z1NLJTR');
+    </script>
   </head>
   <body class="text-white min-h-screen overflow-x-hidden relative">
     <!-- Home Button -->
@@ -46,10 +44,17 @@
       <h1 class="text-4xl md:text-5xl font-bold">Pics & Vids</h1>
     </div>
 
-    <!-- Video Section -->
-    <div class="flex justify-center mt-12 px-4">
+    <!-- Video Grid Section -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 px-6 mt-12 justify-items-center">
+      <!-- Video 1 -->
       <video class="w-full max-w-md rounded-lg shadow-lg" controls>
         <source src="sw_rudy_vid.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <!-- Video 2 -->
+      <video class="w-full max-w-md rounded-lg shadow-lg" controls>
+        <source src="sw_54_46_vid.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
     </div>
