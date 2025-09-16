@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Storm Warning - Showreel</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Exo&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Exo', sans-serif;
+      background: linear-gradient(-45deg, #ffb700, #007847, #000000, #007847);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+    }
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+  </style>
+</head>
+<body class="text-white min-h-screen overflow-x-hidden relative">
+
+  <!-- Home Button -->
+  <button class="bg-green-800 hover:bg-yellow-400 text-white font-bold py-2 px-4 rounded mt-6 ml-6 fixed top-0 left-0 z-50" onclick="window.location.href='index.html';">
+    <i class="fa fa-home"></i>
+  </button>
+
+  <!-- Logo -->
+  <img src="sw1-sm-removebg.png" alt="Logo" class="absolute top-4 right-4 w-24 md:w-40">
+
+  <!-- Title -->
+  <div class="pt-32 text-center px-4">
+    <h1 class="text-4xl md:text-5xl font-bold">Showreel</h1>
+  </div>
+
+  <!-- Video Section -->
+  <div class="flex justify-center mt-12 px-4">
+    <video class="w-full max-w-3xl rounded-lg shadow-lg" controls>
+      <source src="Storm Warning Showreel.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+</body>
+</html>
