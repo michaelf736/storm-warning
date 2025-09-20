@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Storm Warning - Showreel</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Exo&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Exo', sans-serif;
+      font-family: 'Varela Round', sans-serif;
       background: linear-gradient(-45deg, #ffb700, #007847, #000000, #007847);
       background-size: 400% 400%;
       animation: gradientBG 15s ease infinite;
@@ -19,25 +19,62 @@
       50% { background-position: 100% 50%; }
       100% { background-position: 0% 50%; }
     }
+
+    @media (max-width: 768px) {
+      .banner-desktop {
+        display: none;
+      }
+      .banner-mobile {
+        display: block;
+      }
+      .mobile-menu-offset {
+        top: 115px !important;
+      }
+    }
+
+    @media (min-width: 769px) {
+      .banner-desktop {
+        display: block;
+      }
+      .banner-mobile {
+        display: none;
+      }
+    }
   </style>
 </head>
-<body class="text-white min-h-screen overflow-x-hidden relative">
+<body class="text-white overflow-x-hidden min-h-screen relative pb-32">
 
-  <!-- Home Button -->
-  <button class="bg-green-800 hover:bg-yellow-400 text-white font-bold py-2 px-4 rounded mt-6 ml-6 fixed top-0 left-0 z-50" onclick="window.location.href='index.html';">
-    <i class="fa fa-home"></i>
-  </button>
+  <!-- Sidebar Toggle -->
+  <input type="checkbox" id="openSidebarMenu" class="hidden">
+  <label for="openSidebarMenu" class="fixed top-5 left-4 z-50 cursor-pointer mobile-menu-offset">
+    <div class="w-6 h-1 bg-yellow-400 mb-1 transform transition-transform duration-300 origin-left"></div>
+    <div class="w-6 h-1 bg-yellow-400 mb-1"></div>
+    <div class="w-6 h-1 bg-yellow-400 transform transition-transform duration-300 origin-left"></div>
+  </label>
 
-  <!-- Logo -->
-  <img src="sw1-sm-removebg.png" alt="Logo" class="absolute top-4 right-4 w-24 md:w-40">
-
-  <!-- Title -->
-  <div class="pt-32 text-center px-4">
-    <h1 class="text-4xl md:text-5xl font-bold">Showreel</h1>
+  <!-- Sidebar Menu -->
+  <div class="fixed top-0 left-0 h-full w-64 bg-black bg-opacity-80 transform -translate-x-full transition-transform duration-300 z-40" id="sidebar">
+    <ul class="mt-40 text-yellow-200 font-bold border-t border-white/10">
+      <li class="p-5 border-b border-white/10"><a href="index.html">Home</a></li>
+      <li class="p-5 border-b border-white/10"><a href="sw_contacts.html">Contact</a></li>
+      <li class="p-5 border-b border-white/10"><a href="sw_gigs.html">Gigs</a></li>
+      <li class="p-5 border-b border-white/10"><a href="sw_look.html">Look</a></li>
+      <li class="p-5 border-b border-white/10"><a href="sw_listen.html">Listen</a></li>
+    </ul>
   </div>
 
- <!-- Video Section -->
-   <div class="w-full max-w-4xl mx-auto mt-8 px-4">
+  <!-- Banner -->
+  <div class="banner-desktop w-full h-[250px] bg-cover bg-center bg-no-repeat" style="background-image: url('sw-castle2.PNG'); background-position: center 30%;"></div>
+  <div class="banner-mobile w-full" style="background-color: black;">
+    <img src="sw_mobile.png" alt="Mobile Banner" class="w-full h-auto">
+  </div>
+
+  <!-- Page Content -->
+  <div class="text-center mt-[10vh] px-4 flex flex-col items-center justify-center gap-6">
+    <h1 class="text-4xl md:text-5xl font-bold">Storm Warning Showreel</h1>
+
+    <!-- YouTube Video Embed -->
+    <div class="w-full max-w-4xl mx-auto mt-8 px-4">
       <div class="relative pb-[56.25%] h-0 overflow-hidden rounded-lg shadow-lg">
         <iframe 
           class="absolute top-0 left-0 w-full h-full"
@@ -51,7 +88,19 @@
     </div>
   </div>
 
+  <!-- Social Icons -->
+  <div class="fixed bottom-4 right-4 z-50 text-right">
+    <a href="https://www.facebook.com/profile.php?id=61574171218142#" class="fa fa-facebook inline-block p-2 w-8 bg-yellow-400 text-black mx-1" target="_blank"></a>
+    <a href="https://www.instagram.com/stormwarningska/" class="fa fa-instagram inline-block p-2 w-8 bg-yellow-400 text-black mx-1" target="_blank"></a>
+    <a href="https://soundcloud.com/yourusername" class="fa fa-soundcloud inline-block p-2 w-8 bg-yellow-400 text-black mx-1" target="_blank"></a>
+  </div>
 
-
+  <script>
+    const checkbox = document.getElementById('openSidebarMenu');
+    const sidebar = document.getElementById('sidebar');
+    checkbox.addEventListener('change', () => {
+      sidebar.classList.toggle('-translate-x-full', !checkbox.checked);
+    });
+  </script>
 </body>
 </html>
