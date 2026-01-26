@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Storm Warning | Meet the Band</title>
+
+  <!-- Keep this the same as your other pages -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen bg-zinc-950 text-zinc-100">
+
+  <!-- ⚠️ Best: copy your exact header/nav from an existing page and just add the Meet link -->
+  <header class="sticky top-0 z-50 border-b border-zinc-800/70 bg-zinc-950/80 backdrop-blur">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
+      <a href="index.html" class="flex items-center gap-3">
+        <span class="text-lg font-semibold tracking-wide">Storm Warning</span>
+      </a>
+
+      <nav class="flex items-center gap-4 text-sm">
+        <a href="index.html" class="text-white/70 hover:text-white/90">Home</a>
+        <a href="showreel.html" class="text-white/70 hover:text-white/90">Showreel</a>
+        <a href="meet-the-band.html" class="text-white">Meet the band</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="mx-auto w-full max-w-6xl px-4 py-10">
+    <section class="mb-10">
+      <h1 class="text-3xl font-bold tracking-tight sm:text-4xl">Meet the band</h1>
+      <p class="mt-3 max-w-2xl text-white/70">
+        The crew behind the ska, reggae, Northern Soul and good-time noise.
+      </p>
+    </section>
+
+    <section class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      <!-- MICHAEL -->
+      <article class="group overflow-hidden rounded-2xl border border-zinc-800/70 bg-zinc-900/40">
+        <div class="aspect-[4/3] overflow-hidden bg-zinc-900">
+          <img src="images/michael.jpeg" alt="Michael" class="h-full w-full object-cover transition duration-300 group-hover:scale-[1.03]" loading="lazy">
+        </div>
+        <div class="p-5">
+          <h2 class="text-lg font-semibold">Michael</h2>
+          <p class="text-sm text-white/70">Vocals</p>
+          <p class="mt-3 text-sm leading-relaxed text-white/70">Add a short bio line here.</p>
+        </div>
+      </article>
+
+      <!-- JOHN -->
+      <article class="group overflow-hidden rounded-2xl border border-zinc-800/70 bg-zinc-900/40">
+        <div class="aspect-[4/3] overflow-hidden bg-zinc-900">
+          <img src="images/john.jpeg" alt="John" class="h-full w-full object-cover transition duration-300 group-hover:scale-[1.03]" loading="lazy">
+        </div>
+        <div class="p-5">
+          <h2 class="text-lg font-semibold">John</h2>
+          <p class="text-sm text-white/70">Keys</p>
+          <p class="mt-3 text-sm leading-relaxed text-white/70">Add a short bio line here.</p>
+        </div>
+      </article>
+
+      <!-- CLAIRE -->
+      <article class="group overflow-hidden rounded-2xl border border-zinc-800/70 bg-zinc-900/40">
+        <div class="aspect-[4/3] overflow-hidden bg-zinc-900">
+          <img src="images/claire.jpeg" alt="Claire" class="h-full w-full object-cover transition duration-300 group-hover:scale-[1.03]" loading="lazy">
+        </div>
+        <div class="p-5">
+          <h2 class="text-lg font-semibold">Claire</h2>
+          <p class="text-sm text-white/70">Role</p>
+          <p class="mt-3 text-sm leading-relaxed text-white/70">Add a short bio line here.</p>
+        </div>
+      </article>
+
+      <!-- BEN -->
+      <article class="group overflow-hidden rounded-2xl border border-zinc-800/70 bg-zinc-900/40">
+        <div class="aspect-[4/3] overflow-hidden bg-zinc-900">
+          <img src="images/ben.jpeg" alt="Ben" class="h-full w-full object-cover transition duration-300 group-hover:scale-[1.03]" loading="lazy">
+        </div>
+        <div class="p-5">
+          <h2 class="text-lg font-semibold">Ben</h2>
+          <p class="text-sm text-white/70">Role</p>
+          <p class="mt-3 text-sm leading-relaxed text-white/70">Add a short bio line here.</p>
+        </div>
+      </article>
+
+      <!-- ANDRIS -->
+      <article class="group overflow-hidden rounded-2xl border border-zinc-800/70 bg-zinc-900/40">
+        <div class="aspect-[4/3] overflow-hidden bg-zinc-900">
+          <img src="images/andris.jpeg" alt="Andris" class="h-full w-full object-cover transition duration-300 group-hover:scale-[1.03]" loading="lazy">
+        </div>
+        <div class="p-5">
+          <h2 class="text-lg font-semibold">Andris</h2>
+          <p class="text-sm text-white/70">Role</p>
+          <p class="mt-3 text-sm leading-relaxed text-white/70">Add a short bio line here.</p>
+        </div>
+      </article>
+
+      <!-- MARTIN -->
+      <article class="group overflow-hidden rounded-2xl border border-zinc-800/70 bg-zinc-900/40">
+        <div class="aspect-[4/3] overflow-hidden bg-zinc-900">
+          <img src="images/martin.jpeg" alt="Martin" class="h-full w-full object-cover transition duration-300 group-hover:scale-[1.03]" loading="lazy">
+        </div>
+        <div class="p-5">
+          <h2 class="text-lg font-semibold">Martin</h2>
+          <p class="text-sm text-white/70">Role</p>
+          <p class="mt-3 text-sm leading-relaxed text-white/70">Add a short bio line here.</p>
+        </div>
+      </article>
+
+      <!-- JAMES (B/W PHOTO) -->
+      <article class="group overflow-hidden rounded-2xl border border-zinc-800/70 bg-zinc-900/40">
+        <div class="aspect-[4/3] overflow-hidden bg-zinc-900">
+          <img src="images/jamesbw.jpeg" alt="James" class="h-full w-full object-cover transition duration-300 group-hover:scale-[1.03]" loading="lazy">
+        </div>
+        <div class="p-5">
+          <h2 class="text-lg font-semibold">James</h2>
+          <p class="text-sm text-white/70">Role</p>
+          <p class="mt-3 text-sm leading-relaxed text-white/70">Add a short bio line here.</p>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <!-- Again: best to copy your real footer from other pages -->
+  <footer class="border-t border-zinc-800/70">
+    <div class="mx-auto max-w-6xl px-4 py-6 text-sm text-white/60">
+      © <span id="y"></span> Storm Warning
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
