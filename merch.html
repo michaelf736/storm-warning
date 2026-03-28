@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Storm Warning - Merch</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600;700;800&family=Varela+Round&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Varela Round', sans-serif;
+      background: linear-gradient(-45deg, #0f172a, #1e293b, #166534, #111827);
+      background-size: 400% 400%;
+      animation: gradientBG 18s ease infinite;
+      color: #ffffff;
+      min-height: 100vh;
+    }
+
+    h1, h2, h3, .exo {
+      font-family: 'Exo', sans-serif;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .glass {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .jamaica-gradient {
+      background: linear-gradient(90deg, #009b3a 0%, #fcd116 50%, #000000 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .price-pill {
+      background: linear-gradient(135deg, rgba(0,155,58,0.95), rgba(252,209,22,0.95));
+      color: #111827;
+    }
+
+    .nav-link {
+      transition: all 0.2s ease;
+    }
+
+    .nav-link:hover,
+    .nav-link:focus {
+      color: #fcd116;
+    }
+
+    .product-image {
+      aspect-ratio: 4 / 3;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 0.9rem;
+      border: 1px solid rgba(255,255,255,0.16);
+      background: rgba(255,255,255,0.06);
+    }
+
+    .placeholder-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 1rem;
+      color: rgba(255,255,255,0.75);
+      font-size: 0.95rem;
+      letter-spacing: 0.02em;
+    }
+  </style>
+</head>
+<body>
+  <header class="px-4 sm:px-6 lg:px-8 pt-6">
+    <div class="max-w-6xl mx-auto glass rounded-2xl px-5 py-4">
+      <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+        <a href="index.html" class="flex items-center gap-3">
+          <img src="sw1-sm-removebg.png" alt="Storm Warning logo" class="h-14 w-auto" />
+          <div>
+            <p class="exo text-2xl font-bold tracking-wide">Storm Warning</p>
+            <p class="text-sm text-white/80">Band merchandise</p>
+          </div>
+        </a>
+
+        <nav aria-label="Main navigation">
+          <ul class="flex flex-wrap gap-x-5 gap-y-2 text-sm sm:text-base">
+            <li><a class="nav-link" href="the-band.html">The Band</a></li>
+            <li><a class="nav-link" href="sw_contacts.html">Contact</a></li>
+            <li><a class="nav-link" href="sw_gigs.html">Gigs</a></li>
+            <li><a class="nav-link" href="sw_look.html">Look</a></li>
+            <li><a class="nav-link" href="sw_listen.html">Listen</a></li>
+            <li><a class="nav-link" href="showreel.html">Showreel</a></li>
+            <li><a class="nav-link text-yellow-300 font-semibold" href="merch.html">Merch</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
+    <section class="max-w-6xl mx-auto glass rounded-3xl overflow-hidden">
+      <div class="grid lg:grid-cols-[1.2fr_0.8fr] gap-0">
+        <div class="p-6 sm:p-8 lg:p-10">
+          <p class="exo text-sm sm:text-base uppercase tracking-[0.2em] text-yellow-300 mb-3">Official merch</p>
+          <h1 class="exo text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-4">
+            Wear the <span class="jamaica-gradient">Storm Warning</span> colours
+          </h1>
+          <p class="text-base sm:text-lg text-white/90 max-w-2xl leading-relaxed">
+            Storm Warning merch is now available. Grab yours at one of our gigs, or drop us a message to reserve an item. Online ordering will be added soon.
+          </p>
+
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="sw_contacts.html" class="inline-flex items-center justify-center rounded-full bg-yellow-300 text-slate-900 font-semibold px-6 py-3 hover:opacity-90 transition">Message the band</a>
+            <a href="#products" class="inline-flex items-center justify-center rounded-full border border-white/25 px-6 py-3 hover:bg-white/10 transition">View merch</a>
+          </div>
+        </div>
+
+        <div class="p-6 sm:p-8 lg:p-10 flex items-center">
+          <div class="w-full glass rounded-3xl p-5 sm:p-6">
+            <div class="product-image placeholder-box">
+              Add a merch banner photo here<br>
+              e.g. band logo, folded shirts, caps, or a gig table shot
+            </div>
+            <div class="grid grid-cols-2 gap-3 mt-4 text-center">
+              <div class="rounded-2xl bg-black/20 p-3">
+                <p class="exo text-2xl font-bold text-yellow-300">4</p>
+                <p class="text-sm text-white/80">Current items</p>
+              </div>
+              <div class="rounded-2xl bg-black/20 p-3">
+                <p class="exo text-2xl font-bold text-yellow-300">Soon</p>
+                <p class="text-sm text-white/80">Online checkout</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="max-w-6xl mx-auto mt-8 sm:mt-10">
+      <div class="mb-6 sm:mb-8">
+        <h2 class="exo text-3xl sm:text-4xl font-bold">Current merch</h2>
+        <p class="text-white/80 mt-2">Photos can be swapped in later without changing the layout.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 xl:grid-cols-4 gap-6">
+        <article class="glass rounded-3xl p-4 sm:p-5">
+          <div class="product-image placeholder-box">Cap photo</div>
+          <div class="mt-4 flex items-start justify-between gap-3">
+            <h3 class="exo text-2xl font-bold">Cap</h3>
+            <span class="price-pill rounded-full px-3 py-1 text-sm font-bold">£8</span>
+          </div>
+          <p class="mt-3 text-white/85">Classic Storm Warning cap. Great for gigs, festivals and sunny beer gardens.</p>
+          <p class="mt-3 text-sm text-white/70">Available now at gigs</p>
+        </article>
+
+        <article class="glass rounded-3xl p-4 sm:p-5">
+          <div class="product-image placeholder-box">Beanie photo</div>
+          <div class="mt-4 flex items-start justify-between gap-3">
+            <h3 class="exo text-2xl font-bold">Beanie</h3>
+            <span class="price-pill rounded-full px-3 py-1 text-sm font-bold">£12</span>
+          </div>
+          <p class="mt-3 text-white/85">Warm knitted beanie with Storm Warning styling. Ideal for colder gigs and winter wear.</p>
+          <p class="mt-3 text-sm text-white/70">Available now at gigs</p>
+        </article>
+
+        <article class="glass rounded-3xl p-4 sm:p-5">
+          <div class="product-image placeholder-box">Polo shirt photo</div>
+          <div class="mt-4 flex items-start justify-between gap-3">
+            <h3 class="exo text-2xl font-bold">Polo shirt</h3>
+            <span class="price-pill rounded-full px-3 py-1 text-sm font-bold">£15</span>
+          </div>
+          <p class="mt-3 text-white/85">100% cotton polo shirt with a smart casual look. Great for fans who want something a bit smarter.</p>
+          <p class="mt-3 text-sm text-white/70">Sizes and colours can be listed here later</p>
+        </article>
+
+        <article class="glass rounded-3xl p-4 sm:p-5">
+          <div class="product-image placeholder-box">T-shirt photo</div>
+          <div class="mt-4 flex items-start justify-between gap-3">
+            <h3 class="exo text-2xl font-bold">T-shirt</h3>
+            <span class="price-pill rounded-full px-3 py-1 text-sm font-bold">£10</span>
+          </div>
+          <p class="mt-3 text-white/85">100% cotton T-shirt featuring Storm Warning branding. Easy everyday wear and perfect for gigs.</p>
+          <p class="mt-3 text-sm text-white/70">Sizes and colours can be listed here later</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto mt-8 sm:mt-10 grid lg:grid-cols-2 gap-6">
+      <div class="glass rounded-3xl p-6 sm:p-7">
+        <h2 class="exo text-3xl font-bold mb-4">How to order for now</h2>
+        <div class="space-y-3 text-white/90 leading-relaxed">
+          <p>Buy your merch at one of our gigs.</p>
+          <p>To reserve an item in advance, please send us a message via the Contact page or through our social media.</p>
+          <p>Online ordering and payments will be added soon.</p>
+        </div>
+      </div>
+
+      <div class="glass rounded-3xl p-6 sm:p-7">
+        <h2 class="exo text-3xl font-bold mb-4">Coming soon</h2>
+        <ul class="space-y-3 text-white/90 leading-relaxed">
+          <li>• Online checkout</li>
+          <li>• Product size options</li>
+          <li>• Posted orders</li>
+          <li>• More merch items</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="px-4 sm:px-6 lg:px-8 pb-8">
+    <div class="max-w-6xl mx-auto text-center text-white/70 text-sm">
+      <p>Storm Warning • Ska, Reggae, Northern Soul and a few surprises</p>
+    </div>
+  </footer>
+</body>
+</html>
