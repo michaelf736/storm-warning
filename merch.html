@@ -67,17 +67,6 @@
       background: rgba(255,255,255,0.06);
     }
 
-    .placeholder-box {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 1rem;
-      color: rgba(255,255,255,0.75);
-      font-size: 0.95rem;
-      letter-spacing: 0.02em;
-    }
-
     .merch-banner {
       position: relative;
       background: linear-gradient(135deg, rgba(15,23,42,0.88), rgba(22,101,52,0.32), rgba(17,24,39,0.88));
@@ -110,17 +99,9 @@
       background: rgba(255,255,255,0.04);
     }
 
-    .banner-item:nth-child(2) {
-      animation-delay: 0.5s;
-    }
-
-    .banner-item:nth-child(3) {
-      animation-delay: 1s;
-    }
-
-    .banner-item:nth-child(4) {
-      animation-delay: 1.5s;
-    }
+    .banner-item:nth-child(2) { animation-delay: 0.5s; }
+    .banner-item:nth-child(3) { animation-delay: 1s; }
+    .banner-item:nth-child(4) { animation-delay: 1.5s; }
 
     .banner-image {
       transition: transform 0.35s ease, box-shadow 0.35s ease, filter 0.35s ease;
@@ -133,13 +114,9 @@
       box-shadow: 0 10px 24px rgba(0,0,0,0.25);
     }
 
-    .banner-stat {
-      transition: transform 0.25s ease, background 0.25s ease;
-    }
-
-    .banner-stat:hover {
-      transform: translateY(-2px);
-      background: rgba(255,255,255,0.1);
+    .buy-button-disabled {
+      opacity: 0.5;
+      pointer-events: none;
     }
 
     @keyframes borderFlow {
@@ -190,7 +167,7 @@
             Wear the <span class="jamaica-gradient">Storm Warning</span> colours
           </h1>
           <p class="text-base sm:text-lg text-white/90 max-w-2xl leading-relaxed">
-            Storm Warning merch is now available. Grab yours at one of our gigs, or drop us a message to reserve an item. Online ordering will be added soon.
+            Storm Warning merch is now available. Grab yours at one of our gigs, or order online for delivery.
           </p>
 
           <div class="mt-8 flex flex-wrap gap-3">
@@ -202,7 +179,8 @@
             <h2 class="exo text-2xl font-bold mb-3">How to order</h2>
             <div class="space-y-2 text-white/90 leading-relaxed text-sm">
               <p>Buy your merch at one of our gigs.</p>
-              <p>Send us a message via the Contact page or social media and we'll post items out for you</p>
+              <p>Send us a message via the Contact page or social media and we'll post items out for you.</p>
+              <p>You can also use the online checkout buttons below.</p>
             </div>
           </div>
         </div>
@@ -214,7 +192,7 @@
               <div class="relative z-10">
                 <div class="flex items-center justify-between gap-3 mb-4">
                   <span class="exo inline-flex items-center rounded-full bg-yellow-300/90 text-slate-900 text-xs sm:text-sm font-bold px-3 py-1">New merch</span>
-                  <span class="text-xs sm:text-sm text-white/70">Available at gigs now</span>
+                  <span class="text-xs sm:text-sm text-white/70">Available now</span>
                 </div>
 
                 <h2 class="exo text-3xl sm:text-4xl font-extrabold text-center mb-5 leading-tight">
@@ -222,45 +200,22 @@
                 </h2>
 
                 <div class="grid grid-cols-2 gap-3">
-                  <div class="banner-item">
-                    <img src="images/cap1.PNG" alt="Storm Warning cap" class="product-image banner-image" />
-                  </div>
-                  <div class="banner-item">
-                    <img src="images/beanie1.PNG" alt="Storm Warning beanie" class="product-image banner-image" />
-                  </div>
-                  <div class="banner-item">
-                    <img src="images/tshirt1.PNG" alt="Storm Warning t-shirt" class="product-image banner-image" />
-                  </div>
-                  <div class="banner-item">
-                    <img src="images/polo1.PNG" alt="Storm Warning polo shirt" class="product-image banner-image" />
-                  </div>
-                </div>
-
-                <div class="grid grid-cols-2 gap-3 mt-4 text-center">
-                  <div class="rounded-2xl bg-black/20 p-3 banner-stat">
-                    <p class="exo text-2xl font-bold text-yellow-300">4</p>
-                    <p class="text-sm text-white/80">Current items</p>
-                  </div>
-                  <div class="rounded-2xl bg-black/20 p-3 banner-stat">
-                    <p class="exo text-2xl font-bold text-yellow-300">Soon</p>
-                    <p class="text-sm text-white/80">Online checkout</p>
-                  </div>
+                  <div class="banner-item"><img src="images/cap1.PNG" alt="Storm Warning cap" class="product-image banner-image" /></div>
+                  <div class="banner-item"><img src="images/beanie1.PNG" alt="Storm Warning beanie" class="product-image banner-image" /></div>
+                  <div class="banner-item"><img src="images/tshirt1.PNG" alt="Storm Warning t-shirt" class="product-image banner-image" /></div>
+                  <div class="banner-item"><img src="images/polo1.PNG" alt="Storm Warning polo shirt" class="product-image banner-image" /></div>
                 </div>
               </div>
             </div>
           </div>
-                  </div>
-
-          <!-- How to order (moved up) -->
-          </div>
-
-        <div class="p-6 sm:p-8 lg:p-10 flex items-center">
+        </div>
+      </div>
+    </section>
 
     <section id="products" class="max-w-6xl mx-auto mt-16 sm:mt-20">
       <div class="w-full h-px bg-white/10 mb-10"></div>
       <div class="mb-6 sm:mb-8">
         <h2 class="exo text-3xl sm:text-4xl font-bold">Current merch</h2>
-        <p class="text-white/80 mt-2"></p>
       </div>
 
       <div class="grid sm:grid-cols-2 xl:grid-cols-4 gap-6">
@@ -271,7 +226,7 @@
             <span class="price-pill rounded-full px-3 py-1 text-sm font-bold">£8</span>
           </div>
           <p class="mt-3 text-white/85">Classic black Storm Warning cap. Great for gigs, festivals and sunny beer gardens.</p>
-          
+          <a href="STRIPE_CAP_LINK" target="_blank" class="inline-flex items-center justify-center mt-4 w-full rounded-full bg-yellow-300 text-slate-900 font-semibold px-4 py-2 hover:opacity-90 transition">Buy now</a>
         </article>
 
         <article class="glass rounded-3xl p-4 sm:p-5">
@@ -281,7 +236,7 @@
             <span class="price-pill rounded-full px-3 py-1 text-sm font-bold">£12</span>
           </div>
           <p class="mt-3 text-white/85">Warm black knitted beanie with Storm Warning styling. Ideal for colder gigs and winter wear.</p>
-          
+          <a href="STRIPE_BEANIE_LINK" target="_blank" class="inline-flex items-center justify-center mt-4 w-full rounded-full bg-yellow-300 text-slate-900 font-semibold px-4 py-2 hover:opacity-90 transition">Buy now</a>
         </article>
 
         <article class="glass rounded-3xl p-4 sm:p-5">
@@ -318,6 +273,17 @@
             </div>
           </div>
 
+          <label for="polo-size" class="block mt-4 text-sm text-white/80">Choose size</label>
+          <select id="polo-size" class="w-full mt-2 p-2 rounded bg-black/30 text-white border border-white/20">
+            <option value="">Select size</option>
+            <option value="STRIPE_POLO_S_LINK">S</option>
+            <option value="STRIPE_POLO_M_LINK">M</option>
+            <option value="STRIPE_POLO_L_LINK">L</option>
+            <option value="STRIPE_POLO_XL_LINK">XL</option>
+            <option value="STRIPE_POLO_2XL_LINK">2XL</option>
+          </select>
+
+          <a id="polo-buy" href="#" target="_blank" class="buy-button-disabled inline-flex items-center justify-center mt-4 w-full rounded-full bg-yellow-300 text-slate-900 font-semibold px-4 py-2 transition">Select size first</a>
           <p class="mt-3 text-sm text-white/70">Sizes available subject to stock</p>
         </article>
 
@@ -355,12 +321,21 @@
             </div>
           </div>
 
+          <label for="tshirt-size" class="block mt-4 text-sm text-white/80">Choose size</label>
+          <select id="tshirt-size" class="w-full mt-2 p-2 rounded bg-black/30 text-white border border-white/20">
+            <option value="">Select size</option>
+            <option value="STRIPE_TSHIRT_S_LINK">S</option>
+            <option value="STRIPE_TSHIRT_M_LINK">M</option>
+            <option value="STRIPE_TSHIRT_L_LINK">L</option>
+            <option value="STRIPE_TSHIRT_XL_LINK">XL</option>
+            <option value="STRIPE_TSHIRT_2XL_LINK">2XL</option>
+          </select>
+
+          <a id="tshirt-buy" href="#" target="_blank" class="buy-button-disabled inline-flex items-center justify-center mt-4 w-full rounded-full bg-yellow-300 text-slate-900 font-semibold px-4 py-2 transition">Select size first</a>
           <p class="mt-3 text-sm text-white/70">Sizes available subject to stock</p>
         </article>
       </div>
     </section>
-
-    
   </main>
 
   <footer class="px-4 sm:px-6 lg:px-8 pb-8">
@@ -368,5 +343,31 @@
       <p>Storm Warning • Ska, Reggae, Northern Soul and a few surprises</p>
     </div>
   </footer>
+
+  <script>
+    function setupSizeSelector(selectId, buttonId) {
+      const select = document.getElementById(selectId);
+      const button = document.getElementById(buttonId);
+
+      if (!select || !button) return;
+
+      select.addEventListener('change', function () {
+        const link = this.value;
+
+        if (link) {
+          button.href = link;
+          button.classList.remove('buy-button-disabled');
+          button.innerText = 'Buy now';
+        } else {
+          button.href = '#';
+          button.classList.add('buy-button-disabled');
+          button.innerText = 'Select size first';
+        }
+      });
+    }
+
+    setupSizeSelector('polo-size', 'polo-buy');
+    setupSizeSelector('tshirt-size', 'tshirt-buy');
+  </script>
 </body>
 </html>
